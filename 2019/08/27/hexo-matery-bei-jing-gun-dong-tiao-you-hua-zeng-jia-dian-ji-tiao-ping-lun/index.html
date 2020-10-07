@@ -75,8 +75,8 @@
         </script>
     
 
-<link rel="stylesheet" href="/Blog/css/prism-tomorrow.css" type="text/css">
-<link rel="stylesheet" href="/Blog/css/prism-line-numbers.css" type="text/css"></head>
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
 
     <body>
 
@@ -84,7 +84,7 @@
     <nav id="headNav" class="bg-color nav-transparent">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
-                <a href="/Blog/" class="waves-effect waves-light">
+                <a href="/" class="waves-effect waves-light">
                     
                     <img src="/medias/logo1.png" class="logo-img" alt="LOGO">
                     
@@ -612,7 +612,7 @@
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
-                location.href = '/Blog/';
+                location.href = '/';
             }
         }
     })();
@@ -738,15 +738,15 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/Blog/tags/Hexo/" target="_blank">
+                                <a href="/tags/Hexo/" target="_blank">
                                     <span class="chip bg-color">Hexo</span>
                                 </a>
                                 
-                                <a href="/Blog/tags/Github/" target="_blank">
+                                <a href="/tags/Github/" target="_blank">
                                     <span class="chip bg-color">Github</span>
                                 </a>
                                 
-                                <a href="/Blog/tags/博客/" target="_blank">
+                                <a href="/tags/博客/" target="_blank">
                                     <span class="chip bg-color">博客</span>
                                 </a>
                                 
@@ -758,7 +758,7 @@
                         <div class="post-cate">
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                                <a href="/Blog/categories/软件安装与配置/" class="post-category" target="_blank">
+                                <a href="/categories/软件安装与配置/" class="post-category" target="_blank">
                                     软件安装与配置
                                 </a>
                                 
@@ -787,7 +787,7 @@
                         <div class="info-break-policy">
                             <i class="fa fa-file-word-o fa-fw"></i>
                             文章字数:&nbsp;&nbsp;
-                                1.2k
+                                1.1k
                         </div>
                         
 
@@ -899,7 +899,7 @@
 </ol>
 <h2 id="4-增加点击跳转评论按钮"><a href="#4-增加点击跳转评论按钮" class="headerlink" title="4.增加点击跳转评论按钮"></a>4.增加点击跳转评论按钮</h2><ol>
 <li><p>新建文件<code>themes\Matery\layout\_partial\back-comment.ejs</code>,粘贴如下代码</p>
-<p>我这里评论是valine，直接填写的valine的id——<code>href="#vcomments"</code>,如果是其他评论，对应修改即可。</p>
+<p>我这里评论是valine，直接填写的valine的id——<code>href=&quot;#vcomments&quot;</code>,如果是其他评论，对应修改即可。</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token operator">&lt;</span><span class="token operator">!</span>-- 直达评论 --<span class="token operator">></span>
 <span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"to_comment"</span> class<span class="token operator">=</span><span class="token string">"comment-scroll"</span><span class="token operator">></span>
     <span class="token operator">&lt;</span>a class<span class="token operator">=</span><span class="token string">"btn-floating btn-large waves-effect waves-light"</span> href<span class="token operator">=</span><span class="token string">"#vcomments"</span> title<span class="token operator">=</span><span class="token string">"直达评论"</span><span class="token operator">></span>
@@ -954,25 +954,7 @@
     <span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">15</span>px<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 <span class="token number">1234567891011121314</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
+
             </div>
             <hr/>
 
@@ -1120,11 +1102,11 @@
                                             <span class="reprint1-tip">
                         <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
-                                            <a href="https://unicorni.github.io/Blog" class="b-link-green">
+                                            <a href="https://github.com/Unicorni/medias" class="b-link-green">
                                                 
                                             </a>
                                             <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                                            <a href="/Blog/2019/08/27/hexo-matery-bei-jing-gun-dong-tiao-you-hua-zeng-jia-dian-ji-tiao-ping-lun/" class="b-link-green">
+                                            <a href="/2019/08/27/hexo-matery-bei-jing-gun-dong-tiao-you-hua-zeng-jia-dian-ji-tiao-ping-lun/" class="b-link-green">
                                                 hexo（matery）背景、滚动条优化+增加点击跳评论
                                             </a>
                                         </p>
@@ -1450,7 +1432,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/Blog/2019/08/27/blog-open-source/">
+                <a href="/2019/08/27/blog-open-source/">
                     <div class="card-image">
                         
                         
@@ -1473,7 +1455,7 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Blog/categories/软件安装与配置/" class="post-category" target="_blank">
+                            <a href="/categories/软件安装与配置/" class="post-category" target="_blank">
                                     软件安装与配置
                                 </a>
                             
@@ -1484,15 +1466,15 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Blog/tags/Hexo/" target="_blank">
+                    <a href="/tags/Hexo/" target="_blank">
                         <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/Blog/tags/Github/" target="_blank">
+                    <a href="/tags/Github/" target="_blank">
                         <span class="chip bg-color">Github</span>
                     </a>
                     
-                    <a href="/Blog/tags/博客/" target="_blank">
+                    <a href="/tags/博客/" target="_blank">
                         <span class="chip bg-color">博客</span>
                     </a>
                     
@@ -1507,7 +1489,7 @@
                 本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
             </div>
             <div class="card">
-                <a href="/Blog/2019/08/27/hexo-matery-bei-jing-gun-dong-tiao-you-hua-zeng-jia-dian-ji-tiao-ping-lun/">
+                <a href="/2019/08/27/hexo-matery-bei-jing-gun-dong-tiao-you-hua-zeng-jia-dian-ji-tiao-ping-lun/">
                     <div class="card-image">
                         
                         
@@ -1530,7 +1512,7 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/Blog/categories/软件安装与配置/" class="post-category" target="_blank">
+                            <a href="/categories/软件安装与配置/" class="post-category" target="_blank">
                                     软件安装与配置
                                 </a>
                             
@@ -1542,15 +1524,15 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/Blog/tags/Hexo/" target="_blank">
+                    <a href="/tags/Hexo/" target="_blank">
                         <span class="chip bg-color">Hexo</span>
                     </a>
                     
-                    <a href="/Blog/tags/Github/" target="_blank">
+                    <a href="/tags/Github/" target="_blank">
                         <span class="chip bg-color">Github</span>
                     </a>
                     
-                    <a href="/Blog/tags/博客/" target="_blank">
+                    <a href="/tags/博客/" target="_blank">
                         <span class="chip bg-color">博客</span>
                     </a>
                     
@@ -1605,18 +1587,18 @@
     
 
         <!-- 代码块功能依赖 -->
-        <script type="text/javascript" src="/Blog/libs/codeBlock/codeBlockFuction.js"></script>
+        <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
         <!-- 代码语言 -->
         
-            <script type="text/javascript" src="/Blog/libs/codeBlock/codeLang.js"></script>
+            <script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
             
                 <!-- 代码块复制 -->
                 
-                    <script type="text/javascript" src="/Blog/libs/codeBlock/codeCopy.js"></script>
+                    <script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
                     
                         <!-- 代码块收缩 -->
                         
-                            <script type="text/javascript" src="/Blog/libs/codeBlock/codeShrink.js"></script>
+                            <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
                             
                                 <!-- 代码块折行 -->
                                 
@@ -1753,7 +1735,7 @@
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">5.6k</span> 字
+                <span class="white-color">5.3k</span> 字
             
 
             
@@ -1793,7 +1775,7 @@
 
 
 
-    <a href="/Blog/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
         <i class="fa fa-rss"></i>
     </a>
 </div>
@@ -1864,7 +1846,7 @@
 <script src="/js/search.js"></script>
 <script type="text/javascript">
 $(function () {
-    searchFunc("/Blog/" + "search.xml", 'searchInput', 'searchResult');
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
 });
 </script>
                         <!-- 回到顶部按钮 -->
@@ -1983,6 +1965,6 @@ $(function () {
 
 
 
-    <script src="/Blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/Blog/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7}});</script><script>!function(e){var r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function t(){for(var c=0;c<r.length;c++)t=r[c],void 0,0<=(n=t.getBoundingClientRect()).top&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=r[c];t=o,n=function(){r=r.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}t(),e.addEventListener("scroll",function(){!function(t,n){clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)}(t,e)})}(this);</script></body>
 
 </html>

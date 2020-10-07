@@ -1,5 +1,5 @@
-https://unicorni.github.io/Blog/2020/07/22/hexo/
-https://unicorni.github.io/Blog/2019/12/27/visual-code-chang-yong-qian-duan-kai-fa-cha-jian-pei-zhi/
-https://unicorni.github.io/Blog/2019/12/27/java-xue-xi-bi-ji-chi-xu-geng-xin/
-https://unicorni.github.io/Blog/2019/08/27/blog-open-source/
-https://unicorni.github.io/Blog/2019/08/27/hexo-matery-bei-jing-gun-dong-tiao-you-hua-zeng-jia-dian-ji-tiao-ping-lun/
+https://github.com/Unicorni/medias/2020/07/22/hexo/
+https://github.com/Unicorni/medias/2019/12/27/visual-code-chang-yong-qian-duan-kai-fa-cha-jian-pei-zhi/
+https://github.com/Unicorni/medias/2019/12/27/java-xue-xi-bi-ji-chi-xu-geng-xin/
+https://github.com/Unicorni/medias/2019/08/27/blog-open-source/
+https://github.com/Unicorni/medias/2019/08/27/hexo-matery-bei-jing-gun-dong-tiao-you-hua-zeng-jia-dian-ji-tiao-ping-lun/
